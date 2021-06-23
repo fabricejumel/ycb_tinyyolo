@@ -1,5 +1,0 @@
-classes = 57
-train  = data/train_ycb_simu.txt
-valid  = data/test_ycb_simu.txt
-names = data/ycb_simu.names
-backup = backup_simu_tiny/
