@@ -95,7 +95,7 @@ class ObjectDetection(object):
 					(w, h) = (boxes[i][2], boxes[i][3])
 
 
-					tuple_i=tuple([x,y,x+y,y+h,self.LABELS[classIDs[i]],confidences[i]])
+					tuple_i=tuple([x,y,x+w,y+h,self.LABELS[classIDs[i]],confidences[i]])
 					data.append(tuple_i)
 
 			# print(data)
