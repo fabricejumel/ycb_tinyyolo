@@ -8,7 +8,7 @@ import cv2
 class ObjectDetection(object):
 
 	def __init__(self):
-		# Get real-time video stream through opencv
+
 
 		LABELS_FILE='ycb_simu.names'
 		CONFIG_FILE='yolov3-tiny-ycb_simu_test.cfg'
@@ -19,8 +19,6 @@ class ObjectDetection(object):
 		self.W=None
 
 		self.LABELS = open(LABELS_FILE).read().strip().split("\n")
-		np.random.seed(4)
-		self.COLORS = np.random.randint(0, 255, size=(len(self.LABELS), 3),	dtype="uint8")
 
 		self.net = cv2.dnn.readNetFromDarknet(CONFIG_FILE, WEIGHTS_FILE)
 		
