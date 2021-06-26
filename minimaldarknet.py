@@ -12,7 +12,7 @@ class ObjectDetection(object):
 
 		LABELS_FILE='ycb_simu.names'
 		CONFIG_FILE='yolov3-tiny-ycb_simu_test.cfg'
-		WEIGHTS_FILE='yolov3-tiny-ycb_simu_best_004.weights'
+		WEIGHTS_FILE='yolov3-tiny-ycb_simu_best_006.weights'
 		self.CONFIDENCE_THRESHOLD=0.3
 
 		self.H=None
